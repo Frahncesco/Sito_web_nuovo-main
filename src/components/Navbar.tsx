@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAuth } from "./AuthContext";
-import { UserCircle2 } from "lucide-react";
+import { UserCircle2, Menu } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { Menu } from "lucide-react";
+import { useNavigate, Link } from "react-router-dom";
 
 const Navbar = () => {
   const { isAuthenticated, logout } = useAuth();
@@ -13,7 +12,6 @@ const Navbar = () => {
   const menuRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
 
-  // Chiudi il menu cliccando fuori (desktop)
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
@@ -32,7 +30,6 @@ const Navbar = () => {
 
   return (
     <div>
-      {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-[#FCFBF8]/90 backdrop-blur-sm border-b border-[#E8E6E1] px-6 py-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
@@ -52,10 +49,10 @@ const Navbar = () => {
 
           {/* Desktop links */}
           <div className="hidden md:flex space-x-8 text-[#555555]">
-            <a href="/" className="hover:text-[#8BAF9C] transition-colors">Home</a>
-            <a href="/products" className="hover:text-[#8BAF9C] transition-colors">Products</a>
-            <a href="/our-story" className="hover:text-[#8BAF9C] transition-colors">Our Story</a>
-            <a href="#footer" className="hover:text-[#8BAF9C] transition-colors">Contact</a>
+            <Link to="/" className="hover:text-[#8BAF9C] transition-colors">Home</Link>
+            <Link to="/products" className="hover:text-[#8BAF9C] transition-colors">Products</Link>
+            <Link to="/our-story" className="hover:text-[#8BAF9C] transition-colors">Our Story</Link>
+            <a href="#footer" className="hover:text-[#8BAF9C] transition-colors">Contact</a> {/* Anchors stay */}
           </div>
 
           {/* Desktop auth or user menu */}
@@ -77,21 +74,17 @@ const Navbar = () => {
                 )}
               </div>
             ) : (
-              <Button
-                variant="ghost"
-                className="text-[#555555] hover:text-[#8BAF9C]"
-                onClick={() => navigate("/login")}
-              >
+              <Link to="/login" className="text-[#555555] hover:text-[#8BAF9C]">
                 Community Login
-              </Button>
+              </Link>
             )}
           </div>
 
           {/* Mobile menu toggle */}
           <div className="md:hidden">
-          <button onClick={() => setMobileMenuOpen(true)}>
-            <Menu className="w-8 h-8 text-[#555555] hover:text-[#8BAF9C]" />
-          </button>
+            <button onClick={() => setMobileMenuOpen(true)}>
+              <Menu className="w-8 h-8 text-[#555555] hover:text-[#8BAF9C]" />
+            </button>
           </div>
         </div>
       </nav>
@@ -115,9 +108,9 @@ const Navbar = () => {
               </button>
             </div>
             <nav className="flex flex-col px-6 space-y-6 py-4 text-[#333333] font-medium">
-              <a href="/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Home</a>
-              <a href="/products" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Products</a>
-              <a href="/our-story" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Our Story</a>
+              <Link to="/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Home</Link>
+              <Link to="/products" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Products</Link>
+              <Link to="/our-story" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Our Story</Link>
               <a href="#footer" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Contact</a>
               {isAuthenticated ? (
                 <button
@@ -130,13 +123,13 @@ const Navbar = () => {
                   Logout
                 </button>
               ) : (
-                <a
-                  href="/login"
+                <Link
+                  to="/login"
                   onClick={() => setMobileMenuOpen(false)}
                   className="hover:text-[#8BAF9C]"
                 >
                   Community Login
-                </a>
+                </Link>
               )}
             </nav>
           </motion.div>
