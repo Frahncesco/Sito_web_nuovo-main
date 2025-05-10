@@ -10,8 +10,7 @@ import {
   DropdownMenuCheckboxItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import { defaultProducts } from "./ProductsData"; // ✅ import dei prodotti
-
+import { defaultProducts } from "./ProductsData";
 
 interface Product {
   id: string;
@@ -29,15 +28,23 @@ interface ProductCatalogProps {
   products?: Product[];
 }
 
+const isTouchDevice = () =>
+  typeof window !== "undefined" &&
+  ("ontouchstart" in window || navigator.maxTouchPoints > 0);
+
 const ProductCatalog: React.FC<ProductCatalogProps> = ({ products = [] }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
+  const [touchDevice, setTouchDevice] = useState(false);
 
   const displayProducts = products.length > 0 ? products : defaultProducts;
 
-  // Extract unique categories
+  useEffect(() => {
+    setTouchDevice(isTouchDevice());
+  }, []);
+
   useEffect(() => {
     const uniqueCategories = Array.from(
       new Set(displayProducts.map((product) => product.category)),
@@ -45,7 +52,6 @@ const ProductCatalog: React.FC<ProductCatalogProps> = ({ products = [] }) => {
     setCategories(uniqueCategories);
   }, [displayProducts]);
 
-  // Filter products based on search query and selected categories
   useEffect(() => {
     let filtered = displayProducts;
 
@@ -83,22 +89,22 @@ const ProductCatalog: React.FC<ProductCatalogProps> = ({ products = [] }) => {
     filteredProducts.length > 0 ? filteredProducts : displayProducts;
 
   return (
-    <div className="bg-background min-h-screen p-6 md:p-8 lg:p-12">
+    <div className="bg-background min-h-screen p-4 sm:p-6 md:p-8 lg:p-12">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="max-w-7xl mx-auto"
       >
-        <h1 className="text-3xl md:text-4xl font-light mb-2 text-foreground">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-light mb-4 text-foreground">
           Sustainable Products
         </h1>
-        <p className="text-muted-foreground mb-8 max-w-2xl">
+        <p className="text-muted-foreground mb-8 max-w-2xl text-sm sm:text-base">
           Explore our collection of regenerative design products, crafted with
           circular economy principles and innovative sustainable materials.
         </p>
 
-        {/* Search and Filter Section */}
+        {/* Search and Filter */}
         <div className="flex flex-col md:flex-row gap-4 mb-8">
           <div className="relative flex-grow">
             <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
@@ -141,21 +147,26 @@ const ProductCatalog: React.FC<ProductCatalogProps> = ({ products = [] }) => {
         </div>
 
         {/* Products Grid */}
-        {productsToDisplay.length > 0 ? (
-          <div
-            className={`grid gap-6 md:gap-8 ${
-              productsToDisplay.length === 1
-                ? "grid-cols-1"
-                : productsToDisplay.length === 2
-                ? "grid-cols-1 sm:grid-cols-2"
-                : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-            }`}
-          >
-            {productsToDisplay.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        ) : (
+        <div
+          className={`grid gap-4 sm:gap-6 md:gap-8 ${
+            productsToDisplay.length === 1
+              ? "grid-cols-1"
+              : productsToDisplay.length === 2
+              ? "grid-cols-1 sm:grid-cols-2"
+              : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          }`}
+        >
+          {productsToDisplay.map((product) => (
+            <ProductCard
+              key={product.id}
+              product={product}
+              alwaysShowDetails={touchDevice}
+            />
+          ))}
+        </div>
+
+        {/* No results */}
+        {productsToDisplay.length === 0 && (
           <div className="text-center py-16">
             <p className="text-muted-foreground text-lg">
               No products found matching your criteria.
@@ -165,20 +176,6 @@ const ProductCatalog: React.FC<ProductCatalogProps> = ({ products = [] }) => {
             </Button>
           </div>
         )}
-
-        {/* Hidden narrative element - Easter egg */}
-        <div className="mt-16 text-center opacity-10 hover:opacity-40 transition-opacity cursor-default">
-          <p className="text-xs italic">
-            "From extraction to regeneration — our mentor's vision realized."
-          </p>
-          <div className="mt-2 opacity-30">
-            <img
-              src="https://api.dicebear.com/7.x/avataaars/svg?seed=mentor2025"
-              alt=""
-              className="w-6 h-6 mx-auto"
-            />
-          </div>
-        </div>
       </motion.div>
     </div>
   );

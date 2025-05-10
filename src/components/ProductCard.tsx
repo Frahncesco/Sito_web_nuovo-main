@@ -1,5 +1,3 @@
-// src/components/ProductCard.tsx
-
 import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -15,9 +13,10 @@ import { Product } from "./ProductsData";
 
 interface ProductCardProps {
   product: Product;
+  alwaysShowDetails?: boolean;
 }
 
-const ProductCard = ({ product }: ProductCardProps) => {
+const ProductCard = ({ product, alwaysShowDetails = false }: ProductCardProps) => {
   const {
     name,
     description,
@@ -28,14 +27,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
     recyclable,
   } = product;
 
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
-    <div className="relative bg-white">
+    <div className="relative bg-white group">
       <motion.div
         className="relative w-full h-full"
-        onHoverStart={() => setIsHovered(true)}
-        onHoverEnd={() => setIsHovered(false)}
         whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.3 }}
       >
@@ -45,9 +40,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
               src={image}
               alt={name}
               className="object-cover w-full h-full"
-              animate={
-                isHovered ? { scale: 1.1, rotate: 5 } : { scale: 1, rotate: 0 }
-              }
               transition={{ duration: 0.5 }}
             />
             <div className="absolute top-3 right-3">
@@ -64,16 +56,8 @@ const ProductCard = ({ product }: ProductCardProps) => {
             <h3 className="font-medium text-lg mb-1">{name}</h3>
             <p className="text-sm text-gray-600 mb-2">{description}</p>
 
-            <motion.div
-              className="mt-3 pt-3 border-t border-gray-100"
-              initial={{ opacity: 0, height: 0 }}
-              animate={
-                isHovered
-                  ? { opacity: 1, height: "auto" }
-                  : { opacity: 0, height: 0 }
-              }
-              transition={{ duration: 0.3 }}
-            >
+            {/* Show details always */}
+            <div className={`mt-3 pt-3 border-t border-gray-100`}>
               <div className="grid grid-cols-2 gap-2 text-xs">
                 <TooltipProvider>
                   <div className="flex items-center gap-1">
@@ -85,9 +69,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
                         <p>Materials used in production</p>
                       </TooltipContent>
                     </Tooltip>
-                    <span className="text-gray-700">
-                      {materials.join(", ")}
-                    </span>
+                    <span className="text-gray-700">{materials.join(", ")}</span>
                   </div>
 
                   <div className="flex items-center gap-1">
@@ -129,7 +111,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
                   </div>
                 </TooltipProvider>
               </div>
-            </motion.div>
+            </div>
           </CardContent>
         </Card>
       </motion.div>

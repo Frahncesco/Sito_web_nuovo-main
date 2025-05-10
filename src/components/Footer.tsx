@@ -1,18 +1,19 @@
 const Footer = () => {
-    return (   
+  return (
     <div>
       {/* Footer */}
-      <footer id="footer" className="bg-[#1c2841] text-white py-12">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center">
-            <div className="text-center md:text-left">
-              <h3 className="font-medium text-lg mb-4">Circulus Design</h3>
-              <p className="text-sm text-gray-300 mb-4">
+      <footer id="footer" className="bg-[#1c2841] text-white py-8 md:py-12">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            {/* Left Side */}
+            <div className="text-center md:text-left space-y-3">
+              <h3 className="font-medium text-base md:text-lg">Circulus Design</h3>
+              <p className="text-xs md:text-sm text-gray-300">
                 Pioneering regenerative design solutions since our transformation in 2025.
               </p>
-              <div className="flex justify-center md:justify-start space-x-4">
-                {/* Instagram */}
-                <a
+              <div className="flex justify-center md:justify-start space-x-4 pt-2">
+               {/* Instagram */}
+               <a
                   href="https://www.instagram.com/ateliertrentacinque?utm_source=qr"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -55,21 +56,20 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="text-center md:text-left">
-            <div className="container mx-auto">
-              <h2 className="text-lg font-semibold">Contattaci</h2>
+            {/* Right Side */}
+            <div className="text-center md:text-left text-xs md:text-sm space-y-1">
+              <h2 className="text-sm md:text-base font-semibold mb-1">Contattaci</h2>
               <p>Email: atelier35official@gmail.com</p>
               <p>Telefono: +39 123 456 7890</p>
               <p>Indirizzo: Via Roma 123, Torino, Italia</p>
               <p>Orari: Lun-Ven 9:00-18:00</p>
             </div>
-            </div>
           </div>
-          
-          <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-gray-400 mb-4 md:mb-0">
-              © 2035 Circulus Design. All rights reserved. Committed to
-              regenerative futures.
+
+          {/* Bottom */}
+          <div className="border-t border-gray-700 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-[10px] md:text-xs text-gray-400">
+            <p className="mb-2 md:mb-0 text-center">
+              © 2035 Circulus Design. All rights reserved. Committed to regenerative futures.
             </p>
           </div>
         </div>
