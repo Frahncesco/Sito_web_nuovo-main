@@ -148,20 +148,15 @@ const ProductCatalog: React.FC<ProductCatalogProps> = ({ products = [] }) => {
 
         {/* Products Grid */}
         <div
-          className={`grid gap-4 sm:gap-6 md:gap-8 ${
-            productsToDisplay.length === 1
-              ? "grid-cols-1"
-              : productsToDisplay.length === 2
-              ? "grid-cols-1 sm:grid-cols-2"
-              : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-          }`}
+          className={`grid gap-6 sm:gap-8 md:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4`}
         >
           {productsToDisplay.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              alwaysShowDetails={touchDevice}
-            />
+            <div className="h-full" key={product.id}>
+              <ProductCard
+                product={product}
+                alwaysShowDetails={touchDevice}
+              />
+            </div>
           ))}
         </div>
 
