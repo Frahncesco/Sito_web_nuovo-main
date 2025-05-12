@@ -28,26 +28,17 @@ interface ProductCatalogProps {
   products?: Product[];
 }
 
-const isTouchDevice = () =>
-  typeof window !== "undefined" &&
-  ("ontouchstart" in window || navigator.maxTouchPoints > 0);
-
 const ProductCatalog: React.FC<ProductCatalogProps> = ({ products = [] }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
-  const [touchDevice, setTouchDevice] = useState(false);
 
   const displayProducts = products.length > 0 ? products : defaultProducts;
 
   useEffect(() => {
-    setTouchDevice(isTouchDevice());
-  }, []);
-
-  useEffect(() => {
     const uniqueCategories = Array.from(
-      new Set(displayProducts.map((product) => product.category)),
+      new Set(displayProducts.map((product) => product.category))
     );
     setCategories(uniqueCategories);
   }, [displayProducts]);
@@ -59,13 +50,13 @@ const ProductCatalog: React.FC<ProductCatalogProps> = ({ products = [] }) => {
       filtered = filtered.filter(
         (product) =>
           product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          product.description.toLowerCase().includes(searchQuery.toLowerCase()),
+          product.description.toLowerCase().includes(searchQuery.toLowerCase())
       );
     }
 
     if (selectedCategories.length > 0) {
       filtered = filtered.filter((product) =>
-        selectedCategories.includes(product.category),
+        selectedCategories.includes(product.category)
       );
     }
 
@@ -76,7 +67,7 @@ const ProductCatalog: React.FC<ProductCatalogProps> = ({ products = [] }) => {
     setSelectedCategories((prev) =>
       prev.includes(category)
         ? prev.filter((c) => c !== category)
-        : [...prev, category],
+        : [...prev, category]
     );
   };
 
@@ -147,15 +138,10 @@ const ProductCatalog: React.FC<ProductCatalogProps> = ({ products = [] }) => {
         </div>
 
         {/* Products Grid */}
-        <div
-          className={`grid gap-6 sm:gap-8 md:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4`}
-        >
+        <div className="grid gap-6 sm:gap-8 md:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {productsToDisplay.map((product) => (
             <div className="h-full" key={product.id}>
-              <ProductCard
-                product={product}
-                alwaysShowDetails={touchDevice}
-              />
+              <ProductCard product={product} />
             </div>
           ))}
         </div>
