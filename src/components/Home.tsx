@@ -5,6 +5,8 @@ import { ArrowRight, Leaf, RefreshCw, Globe } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { useNavigate, Link } from "react-router-dom";
+import NewsletterSubscription from "./NewsLetterSubscription";
+
 
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -75,7 +77,7 @@ const Home = () => {
                 Our Transformation Story
               </Link>
             </Button>
-          </motion.div>
+          </motion.div> 
         </div>
       </section>
 
@@ -147,6 +149,12 @@ const Home = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+       {/* Newsletter Subscription */}
+       <section className="py-20 bg-[#F9F9F9]">
+        <div className="max-w-7xl mx-auto px-6">
+          <NewsletterSubscription />
         </div>
       </section>
     </div>
