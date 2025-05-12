@@ -17,19 +17,23 @@ const NewsletterSubscription = () => {
     };
 
     emailjs
-    .send(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID, // ID del servizio
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // ID del template
-      templateParams, // Parametri del template
-      import.meta.env.VITE_EMAILJS_PUBLIC_KEY // Chiave pubblica
-    )
-    .then(() => {
-      setSubmittedWithMagazine(receiveMagazine);
-      setSuccess(true);
-    })
-    .catch((error) => {
-      console.error("Errore durante l'invio dell'email:", error);
-    });
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        setSubmittedWithMagazine(receiveMagazine);
+        setSuccess(true);
+        setEmail("");
+        setAddress("");
+        setReceiveMagazine(false);
+      })
+      .catch((error) => {
+        console.error("Errore invio EmailJS:", error);
+        alert("Errore durante l'invio. Riprova più tardi.");
+      });
   };
 
   return (
