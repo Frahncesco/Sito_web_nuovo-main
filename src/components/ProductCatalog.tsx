@@ -88,11 +88,11 @@ const ProductCatalog: React.FC<ProductCatalogProps> = ({ products = [] }) => {
         className="max-w-7xl mx-auto"
       >
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-light mb-4 text-foreground">
-          Sustainable Products
+          Prodotti Sostenibili
         </h1>
         <p className="text-muted-foreground mb-8 max-w-2xl text-sm sm:text-base">
-          Explore our collection of regenerative design products, crafted with
-          circular economy principles and innovative sustainable materials.
+          Scopri la nostra collezione di prodotti a design rigenerativo, realizzati con
+          principi di economia circolare e materiali sostenibili innovativi.
         </p>
 
         {/* Search and Filter */}

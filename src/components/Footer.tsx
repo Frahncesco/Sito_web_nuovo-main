@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="text-center md:text-left space-y-3">
               <h3 className="font-medium text-base md:text-lg">Circulus Design</h3>
               <p className="text-xs md:text-sm text-gray-300">
-                Pioneering regenerative design solutions since our transformation in 2025.
+                Soluzioni di design rigenerativo all’avanguardia sin dalla nostra trasformazione nel 2025.
               </p>
               <div className="flex justify-center md:justify-start space-x-4 pt-2">
                {/* Instagram */}

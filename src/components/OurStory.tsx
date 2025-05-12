@@ -16,34 +16,34 @@ function OurStory() {
               className="h-[535px] flex flex-col"
             >
               <h2 className="text-3xl font-light text-[#333333] mb-4">
-                Our <span className="font-medium">Transformation</span> Story
+              Il racconto della nostra <span className="font-medium">rinascita</span>
               </h2>
 
               <div className="flex-1 overflow-y-auto pr-4 space-y-6 text-[#555555]">
                 <p>
-                In 2025, we embarked on a profound and uncompromising journey—one that redefined not only our company’s mission but also the very nature of our relationship with the planet. What began as a strategic pivot soon evolved into a holistic transformation, guided by a bold vision and a deeply held conviction that design must serve both people and the planet. With the support of a passionate, cross-disciplinary team of innovators, we dismantled the conventions of traditional design practices and laid the foundation for something radically different: a regenerative enterprise devoted to planetary healing and systemic change.
+                Nel 2025, abbiamo intrapreso un viaggio profondo e senza compromessi - un percorso che ha ridefinito non solo la missione della nostra azienda, ma anche la natura stessa del nostro rapporto con il pianeta. Ciò che iniziò come un cambiamento strategico si trasformò presto in una trasformazione olistica, guidata da una visione audace e dalla ferma convinzione che il design debba servire sia le persone che il pianeta. Con il supporto di un team appassionato e multidisciplinare di innovatori, abbiamo smantellato le convenzioni delle pratiche di design tradizionali e gettato le basi per qualcosa di radicalmente diverso: un'impresa rigenerativa dedicata alla guarigione del pianeta e al cambiamento sistemico.
                 </p>
 
                 <p>
-                Our transformation was not incremental—it was foundational. We fully embraced the principles of circular and regenerative design, moving beyond sustainability as a goal and embracing it as a baseline. In our new paradigm, products are conceived as living elements within a larger ecological and social system—designed not only to last, but to continuously evolve, regenerate, and contribute positively to the biosphere. We see every product as a potential agent of restoration: a tool for rebuilding soil, purifying air, sequestering carbon, and nurturing biodiversity. Design, for us, is no longer a process of creating objects—it is a responsibility, a dialogue, and a promise to future generations.
+                La nostra trasformazione non è stata graduale, ma fondamentale. Abbiamo abbracciato completamente i principi del design circolare e rigenerativo, andando oltre la sostenibilità come obiettivo e adottandola come base. Nel nostro nuovo paradigma, i prodotti sono concepiti come elementi viventi all'interno di un più ampio sistema ecologico e sociale - progettati non solo per durare, ma per evolversi continuamente, rigenerarsi e contribuire positivamente alla biosfera. Vediamo ogni prodotto come un potenziale agente di rigenerazione: uno strumento per ricostruire il suolo, purificare l'aria, sequestrare carbonio e nutrire la biodiversità. Il design, per noi, non è più un processo di creazione di oggetti - è una responsabilità, un dialogo e una promessa alle generazioni future.
                 </p>
 
                 <p>
-                At every stage of creation—from material sourcing and manufacturing to product lifecycle and re-integration into the ecosystem—we ask a fundamental question: Does this give more than it takes? Our design ethos is rooted in the belief that aesthetics and ethics are not at odds, but inherently intertwined. Beauty is not merely how a product looks, but how it behaves within the world it inhabits—how it nourishes, restores, and uplifts.
+                In ogni fase della creazione - dall'approvvigionamento dei materiali alla produzione, dal ciclo di vita del prodotto alla sua reintegrazione nell'ecosistema - ci poniamo una domanda fondamentale: Questo dà più di quanto prenda? La nostra etica del design è radicata nella convinzione che estetica ed etica non siano in contrasto, ma intrinsecamente connesse. La bellezza non è solo come un prodotto appare, ma come si comporta nel mondo che abita - come nutre, ripristina ed eleva.
                 </p>
 
                 <p>
-                Now, ten years after that catalytic shift, we stand as proud pioneers of the regenerative design movement. Our products and projects are living testaments to what is possible when innovation is guided by integrity and interdependence. From biodegradable furniture crafted from mycelium to self-sustaining lighting systems powered by bioluminescent organisms, every creation is born from a commitment to circularity, resilience, and ecological intelligence.
+                Ora, dieci anni dopo quel cambiamento catalizzatore, ci ergiamo come orgogliosi pionieri del movimento del design rigenerativo. I nostri prodotti e progetti sono testimonianze viventi di ciò che è possibile quando l'innovazione è guidata dall'integrità e dall'interdipendenza. Dai mobili biodegradabili realizzati con micelio ai sistemi di illuminazione autosufficienti alimentati da organismi bioluminescenti, ogni creazione nasce da un impegno verso la circolarità, la resilienza e l'intelligenza ecologica.
                 </p>
 
                 <p>
-                But our story is not just about innovation—it is about care. It is about recognizing the urgent need for systemic change and choosing to lead by example. It is about designing with empathy—for communities, for ecosystems, and for the invisible futures we are shaping with every decision. We are no longer content to minimize harm; we are here to create net-positive impact, to repair what has been damaged, and to imagine—and build—a future in which all life can thrive.
+                Ma la nostra storia non riguarda solo l'innovazione - riguarda la cura. Riguarda il riconoscimento dell'urgente necessità di un cambiamento sistemico e la scelta di guidare con l'esempio. Riguarda il progettare con empatia - per le comunità, per gli ecosistemi e per i futuri invisibili che stiamo plasmando con ogni decisione. Non ci accontentiamo più di minimizzare i danni; siamo qui per creare un impatto netto positivo, per riparare ciò che è stato danneggiato e per immaginare - e costruire - un futuro in cui tutta la vita possa prosperare.
                 </p>
 
                 <p>
-                As we look ahead, our mission remains clear and unwavering: to push the boundaries of what design can achieve, to foster regenerative cultures, and to co-create a world where design is not only beautiful and functional, but also deeply just, life-affirming, and healing.
+                Guardando avanti, la nostra missione rimane chiara e incrollabile: spingere i confini di ciò che il design può ottenere, favorire culture rigenerative e co-creare un mondo in cui il design non sia solo bello e funzionale, ma anche profondamente giusto, vitale e curativo.
                 </p>
-              </div>
+            </div>
             </motion.div>
 
             {/* Immagine */}
@@ -71,7 +71,7 @@ function OurStory() {
                       <div className="text-white">
                         <div className="font-medium text-sm sm:text-base">The New Atelier 35</div>
                         <div className="text-xs sm:text-sm opacity-70">
-                          The future of circular creation.
+                          Il domani della sostenibilità circolare
                         </div>
                       </div>
                     </div>

@@ -7,7 +7,6 @@ import { Card, CardContent } from "./ui/card";
 import { useNavigate, Link } from "react-router-dom";
 import NewsletterSubscription from "./NewsLetterSubscription";
 
-
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
   const navigate = useNavigate();
@@ -29,11 +28,48 @@ const Home = () => {
   };
 
   const featuredProducts = [
-    { id: 1, name: "EcoChair 3.0", description: "Self-adapting furniture made from reclaimed ocean plastics", image: "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=800&q=80" },
-    { id: 2, name: "Bioluminescent Lamp", description: "Energy-free lighting using engineered sustainable organisms", image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=600&q=80" },
-    { id: 3, name: "AirPurify Plant Stand", description: "Living wall panels that purify air and regulate humidity", image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&q=80" },
-    { id: 4, name: "NomadDesk", description: "Portable workspace solution made from sustainable materials", image: "https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=800&q=80" },
-    { id: 5, name: "SonicSpeaker", description: "Energy-efficient speaker with carbon-negative manufacturing.", image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&q=80" },
+    {
+      id: 1,
+      name: "Sedia CH23",
+      description: "Sedia da pranzo in rovere con seduta intrecciata in corda naturale, perfetta per ambienti eleganti e sostenibili.",
+      image: "https://res.cloudinary.com/dfwzl0ito/image/fetch/c_scale,w_1920,f_auto/https%3A%2F%2Fadmincms.carlhansen.com%2Fglobalassets%2Fproducts%2Fchairs%2Fch23%2Fch23_oak_oil_natural_papercord_detail.jpg"
+    },
+    {
+      id: 2,
+      name: "Poltrona Lounge CH07",
+      description: "Elegante chaise longue in legno curvato e pelle, icona del design danese moderno e sostenibile.",
+      image: "https://res.cloudinary.com/dfwzl0ito/image/fetch/c_scale,w_1920,f_auto/https%3A%2F%2Fadmincms.carlhansen.com%2Fglobalassets%2Fproducts%2Floungechairs%2Fch07%2Fch07_lifestyle_new_4.5_.jpg"
+    },
+    {
+      id: 3,
+      name: "Tavolo da pranzo CH006",
+      description: "Tavolo allungabile in rovere massello con finitura a olio naturale, ideale per spazi flessibili e funzionali.",
+      image: "https://res.cloudinary.com/dfwzl0ito/image/fetch/c_scale,w_1920,f_auto/https%3A%2F%2Fadmincms.carlhansen.com%2Fglobalassets%2Fproducts%2Fdining-tables%2Fch006%2Fch36_ch53_oak_oil_papercord_natural_ch006_oak_oil_ek61_o240.jpg"
+    },
+    {
+      id: 4,
+      name: "Tavolino CH008",
+      description: "Tavolino rotondo in legno di teak e rovere, raffinato e resistente, adatto sia a spazi moderni che tradizionali.",
+      image: "https://res.cloudinary.com/dfwzl0ito/image/fetch/c_scale,w_1920,f_auto/https%3A%2F%2Fadmincms.carlhansen.com%2Fglobalassets%2Fproducts%2Fcoffee-tables%2Fch008%2Fch22_teak_oak_oil_papercord_natural_ch008_teak_oak_oil_o78_detail.jpg"
+    },
+    {
+      id: 5,
+      name: "Panca BM0489",
+      description: "Panca intrecciata con struttura in rovere e seduta in corda naturale, perfetta per ingressi e zone relax.",
+      image: "https://res.cloudinary.com/dfwzl0ito/image/fetch/c_scale,w_1200,f_auto/https%3A%2F%2Fadmincms.carlhansen.com%2Fglobalassets%2Fproducts%2Fcoffee-tables%2Fbm0489%2Fbm0489l_oak_oil_papercord_natural_bm0555_160_oak_oil_detail.jpg"
+    },
+    {
+      id: 6,
+      name: "Sedia Outdoor AH604",
+      description: "Sedia da esterni in teak non trattato, pensata per durare nel tempo senza rinunciare a estetica e sostenibilità.",
+      image: "https://res.cloudinary.com/dfwzl0ito/image/fetch/c_scale,w_640,f_auto/https%3A%2F%2Fadmincms.carlhansen.com%2Fglobalassets%2Fproducts%2Foutdoor-furniture%2Fah604%2Fah604_teak_untreated_v3.jpg"
+    },
+    {
+      id: 7,
+      name: "Divano Lounge Outdoor EOOS",
+      description: "Divano modulare da esterno in teak con cuscini idrorepellenti, ideale per ambienti outdoor raffinati e sostenibili.",
+      image: "https://res.cloudinary.com/dfwzl0ito/image/fetch/c_scale,w_640,f_auto/https%3A%2F%2Fadmincms.carlhansen.com%2Fglobalassets%2Fproducts%2Foutdoor-furniture%2Feoos-3-seater-with-lounge%2Fe541_e511_e023_teak_untreated_panamaalga_lifeoat_cu_ritmolaguna_lisoduna.jpg"
+    }
   ];
 
   return (
@@ -50,7 +86,7 @@ const Home = () => {
           >
             <img
               src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=1200&q=80"
-              alt="Sustainable design background"
+              alt="Sfondo design sostenibile"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -59,22 +95,22 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-40 relative z-10">
           <motion.div initial="hidden" animate="visible" variants={staggerContainerVariants} className="max-w-2xl">
             <motion.h1 variants={fadeInUpVariants} className="text-3xl sm:text-5xl font-light mb-6 text-[#FAF3E0]">
-              Design that <span className="font-semibold">regenerates</span> our world
+              Design che <span className="font-semibold">rigenera</span> il nostro mondo
             </motion.h1>
             <motion.p variants={fadeInUpVariants} className="text-base sm:text-lg text-[#F5F5DC] mb-8">
-              Since our ethical transformation in 2025, we've pioneered sustainable design solutions that give back more than they take.
+              Dalla nostra trasformazione etica nel 2025, abbiamo pionierizzato soluzioni di design sostenibile che restituiscono più di quanto prendono.
             </motion.p>
           </motion.div>
 
           <motion.div variants={fadeInUpVariants} className="flex flex-col sm:flex-row gap-4">
             <Button className="bg-[#8BAF9C] hover:bg-[#7A9A89] text-white px-6 py-3 text-center text-sm sm:text-base">
               <Link to="/products" className="flex items-center justify-center">
-                Explore Our Products <ArrowRight className="ml-2 h-4 w-4" />
+                Esplora i nostri prodotti <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button variant="outline" className="border-[#D9C5B2] text-[#555555] hover:bg-[#D9C5B2]/10 px-6 py-3 text-sm sm:text-base">
               <Link to="/our-story" className="flex items-center justify-center">
-                Our Transformation Story
+                La nostra storia
               </Link>
             </Button>
           </motion.div> 
@@ -87,13 +123,16 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 sm:gap-12">
             {[{
               icon: <Leaf className="h-8 w-8 text-[#8BAF9C]" />, bg: "bg-[#8BAF9C]/20",
-              title: "Regenerative Materials", desc: "We use only materials that replenish ecosystems or are infinitely recyclable in our closed-loop system."
+              title: "Materiali rigenerativi", 
+              desc: "Utilizziamo solo materiali che rigenerano gli ecosistemi o sono infinitamente riciclabili nel nostro sistema a circuito chiuso."
             }, {
               icon: <RefreshCw className="h-8 w-8 text-[#D9C5B2]" />, bg: "bg-[#D9C5B2]/20",
-              title: "Circular Economy", desc: "Every product is designed for disassembly, repair, and eventual transformation into new items."
+              title: "Economia circolare", 
+              desc: "Ogni prodotto è progettato per essere smontato, riparato e infine trasformato in nuovi oggetti."
             }, {
               icon: <Globe className="h-8 w-8 text-[#A9A9A9]" />, bg: "bg-[#A9A9A9]/20",
-              title: "Net Positive Impact", desc: "Our operations sequester more carbon than they emit and actively restore biodiversity."
+              title: "Impatto positivo netto", 
+              desc: "Le nostre operazioni sequestrano più carbonio di quanto emettano e ripristinano attivamente la biodiversità."
             }].map((item, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: i * 0.2 }} viewport={{ once: true }} className="flex flex-col items-center text-center">
                 <div className={`w-16 h-16 rounded-full ${item.bg} flex items-center justify-center mb-4`}>
@@ -110,21 +149,21 @@ const Home = () => {
       {/* Featured Products */}
       <section id="products" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-[#FCFBF8]">
         <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col sm:flex-row justify-between items-start mb-10 sm:mb-12">
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-light text-[#333333] mb-2">
-              Featured <span className="font-medium">Designs</span>
-            </h2>
-            <p className="text-[#555555] max-w-2xl text-sm sm:text-base">
-              Explore our latest innovations in sustainable living, where beauty meets responsibility.
-            </p>
+          <div className="flex flex-col sm:flex-row justify-between items-start mb-10 sm:mb-12">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-light text-[#333333] mb-2">
+                Design <span className="font-medium">in evidenza</span>
+              </h2>
+              <p className="text-[#555555] max-w-2xl text-sm sm:text-base">
+                Scopri le nostre ultime innovazioni in vivibilità sostenibile, dove bellezza incontra responsabilità.
+              </p>
+            </div>
+            <div className="mt-2 sm:mt-0 sm:ml-4 sm:text-right sm:self-end">
+              <Button asChild variant="link" className="text-[#8BAF9C] hover:text-[#7A9A89] text-sm">
+                <Link to="/products">Vedi tutti i prodotti <ArrowRight className="ml-1 h-4 w-4" /></Link>
+              </Button>
+            </div>
           </div>
-          <div className="mt-2 sm:mt-0 sm:ml-4 sm:text-right sm:self-end">
-            <Button asChild variant="link" className="text-[#8BAF9C] hover:text-[#7A9A89] text-sm">
-              <Link to="/products">View All Products <ArrowRight className="ml-1 h-4 w-4" /></Link>
-            </Button>
-          </div>
-        </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {featuredProducts.map(product => (
@@ -135,8 +174,8 @@ const Home = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
                       <div className="text-white text-sm">
                         <div className="flex flex-wrap gap-2 mb-2">
-                          <span className="bg-[#8BAF9C] text-white text-xs px-2 py-1 rounded-full">Regenerative</span>
-                          <span className="bg-[#D9C5B2] text-white text-xs px-2 py-1 rounded-full">Biodegradable</span>
+                          <span className="bg-[#8BAF9C] text-white text-xs px-2 py-1 rounded-full">Rigenerativo</span>
+                          <span className="bg-[#D9C5B2] text-white text-xs px-2 py-1 rounded-full">Biodegradabile</span>
                         </div>
                       </div>
                     </div>
@@ -151,8 +190,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-       {/* Newsletter Subscription */}
-       <section className="py-20 bg-[#F9F9F9]">
+
+      {/* Newsletter Subscription */}
+      <section className="py-20 bg-[#F9F9F9]">
         <div className="max-w-7xl mx-auto px-6">
           <NewsletterSubscription />
         </div>

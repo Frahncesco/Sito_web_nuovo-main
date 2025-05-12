@@ -50,9 +50,9 @@ const Navbar = () => {
           {/* Desktop links */}
           <div className="hidden md:flex space-x-8 text-[#555555]">
             <Link to="/" className="hover:text-[#8BAF9C] transition-colors">Home</Link>
-            <Link to="/products" className="hover:text-[#8BAF9C] transition-colors">Products</Link>
-            <Link to="/our-story" className="hover:text-[#8BAF9C] transition-colors">Our Story</Link>
-            <a href="#footer" className="hover:text-[#8BAF9C] transition-colors">Contact</a> {/* Anchors stay */}
+            <Link to="/products" className="hover:text-[#8BAF9C] transition-colors">Prodotti</Link>
+            <Link to="/our-story" className="hover:text-[#8BAF9C] transition-colors">La nostra storia</Link>
+            <a href="#footer" className="hover:text-[#8BAF9C] transition-colors">Contatti</a> {/* Anchors stay */}
           </div>
 
           {/* Desktop auth or user menu */}
