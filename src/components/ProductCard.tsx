@@ -67,8 +67,8 @@ const ProductCard = ({ product, alwaysShowDetails = false }: ProductCardProps) =
 
             {showDetails && (
               <div className="mt-3 pt-3 border-t border-gray-100 transition-all duration-300">
-                <div className="grid grid-cols-2 gap-2 text-xs">
-                  <TooltipProvider>
+                <TooltipProvider>
+                  <div className="flex gap-4 text-xs items-center flex-wrap">
                     <div className="flex items-center gap-1">
                       <Tooltip>
                         <TooltipTrigger>
@@ -96,7 +96,7 @@ const ProductCard = ({ product, alwaysShowDetails = false }: ProductCardProps) =
                     <div className="flex items-center gap-1">
                       <Tooltip>
                         <TooltipTrigger>
-                          <Recycle className="h-4 w-4 text-blue-600" />
+                          <Recycle className={`h-4 w-4 ${recyclable ? "text-blue-600" : "text-red-500"}`} />
                         </TooltipTrigger>
                         <TooltipContent>
                           <p>Is this product recyclable?</p>
@@ -106,20 +106,8 @@ const ProductCard = ({ product, alwaysShowDetails = false }: ProductCardProps) =
                         {recyclable ? "Yes" : "No"}
                       </span>
                     </div>
-
-                    <div className="flex items-center gap-1">
-                      <Tooltip>
-                        <TooltipTrigger>
-                          <Info className="h-4 w-4 text-gray-600" />
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>Click to learn more</p>
-                        </TooltipContent>
-                      </Tooltip>
-                      <span className="text-gray-500 italic">More info</span>
-                    </div>
-                  </TooltipProvider>
-                </div>
+                  </div>
+                </TooltipProvider>
               </div>
             )}
           </CardContent>
