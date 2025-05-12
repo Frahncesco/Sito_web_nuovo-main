@@ -14,6 +14,7 @@ const NewsletterSubscription = () => {
     const templateParams = {
       email: email,
       address: receiveMagazine ? address : "Non richiesto",
+      pdf_url: "https://www.matematika.it/public/allegati/35/06_14_Geometria_analitica_sintesi_2_7.pdf",
     };
 
     emailjs
