@@ -109,9 +109,9 @@ const Navbar = () => {
             </div>
             <nav className="flex flex-col px-6 space-y-6 py-4 text-[#333333] font-medium">
               <Link to="/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Home</Link>
-              <Link to="/products" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Products</Link>
-              <Link to="/our-story" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Our Story</Link>
-              <a href="#footer" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Contact</a>
+              <Link to="/products" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Prodotti</Link>
+              <Link to="/our-story" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">La nostra storia</Link>
+              <a href="#footer" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Contatti</a>
               {isAuthenticated ? (
                 <button
                   onClick={() => {
