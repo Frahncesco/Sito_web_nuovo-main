@@ -69,6 +69,108 @@ const Home = () => {
       name: "Divano Lounge Outdoor EOOS",
       description: "Divano modulare da esterno in teak con cuscini idrorepellenti, ideale per ambienti outdoor raffinati e sostenibili.",
       image: "https://res.cloudinary.com/dfwzl0ito/image/fetch/c_scale,w_640,f_auto/https%3A%2F%2Fadmincms.carlhansen.com%2Fglobalassets%2Fproducts%2Foutdoor-furniture%2Feoos-3-seater-with-lounge%2Fe541_e511_e023_teak_untreated_panamaalga_lifeoat_cu_ritmolaguna_lisoduna.jpg"
+    },
+    {
+      id: 8,
+      name: "Sedia Cross Chair - interno moderno",
+      description: "Sedia in legno naturale in un contesto abitativo contemporaneo con luce calda.",
+      image: "https://taktcph.com/wp-content/uploads/2022/11/lifestylecrosschair221114.jpg.webp"
+    },
+    {
+      id: 9,
+      name: "Divano modulare Takt - composizione angolare",
+      description: "Divano componibile modulare in tessuto grigio, dallo stile nordico e sostenibile.",
+      image: "https://taktcph.com/wp-content/uploads/2022/09/splitmodule-0003-2022-06-01-takt-y2126341.jpg.webp"
+    },
+    {
+      id: 10,
+      name: "Divano modulare Takt - composizione con chaise longue",
+      description: "Versione allungata del divano modulare Takt, ideale per spazi rilassanti.",
+      image: "https://taktcph.com/wp-content/uploads/2022/09/splitmodule-0007-2022-06-01-takt-y2126488.png.webp"
+    },
+    {
+      id: 11,
+      name: "Sedia Crossbar con divano modulare",
+      description: "Combinazione tra sedia in legno e divano, per un salotto elegante e funzionale.",
+      image: "https://taktcph.com/wp-content/uploads/2022/01/splitmodule-0014-2021-11-10-takt-veranda1860-1crossbarchair.jpg"
+    },
+    {
+      id: 12,
+      name: "Abitazione in stile scandinavo con arredi Takt",
+      description: "Interni caldi con pavimenti in legno chiaro e mobili minimalisti.",
+      image: "https://taktcph.com/wp-content/uploads/2019/10/t05-lifestylehouse02.webp"
+    },
+    {
+      id: 13,
+      name: "Divano Spoke Gallery - ambientazione neutra",
+      description: "Divano dalle linee leggere, in uno spazio calmo e luminoso.",
+      image: "https://taktcph.com/wp-content/uploads/2023/08/galleryspokesofa230831-0001-2023-08-22-takt157132.jpg.webp"
+    },
+    {
+      id: 14,
+      name: "Divano Spoke modulare - vista prospettica",
+      description: "Vista laterale del divano Spoke modulare in ambiente scandinavo.",
+      image: "https://taktcph.com/wp-content/uploads/2023/05/splitmodulespokesofa230519-0001s-0012-m-2.png.webp"
+    },
+    {
+      id: 15,
+      name: "Piastrella Eik - texture naturale",
+      description: "Pavimento effetto legno chiaro della serie Eik, elegante e moderno.",
+      image: "https://www.refin-ceramic-tiles.com/wp-content/uploads/2024/09/Slider-Eik-2-1920x1012.jpg"
+    },
+    {
+      id: 16,
+      name: "Piastrella Etherea - design soft",
+      description: "Texture delicata e luminosa della collezione Etherea, ideale per spazi minimal.",
+      image: "https://www.refin-ceramic-tiles.com/wp-content/uploads/2024/09/Slider-Etherea-1920x1012.jpg"
+    },
+    {
+      id: 17,
+      name: "Pavimento Refin Beat in ambiente living",
+      description: "Rivestimento moderno effetto cemento in soggiorno elegante e luminoso.",
+      image: "https://www.refin-ceramic-tiles.com/wp-content/uploads/2024/04/beat-in-home-1920x1012.jpg"
+    },
+    {
+      id: 18,
+      name: "Piastrella Blended Natural - interni raffinati",
+      description: "Ambiente sofisticato con superfici in gres effetto pietra naturale.",
+      image: "https://www.refin-ceramic-tiles.com/file/1680x0/ambientazioni/_HEADER/Blended_Natural_60x120_Amb_02_Header.jpg"
+    },
+    {
+      id: 19,
+      name: "Piastrella Block Mist - tonalità morbide",
+      description: "Gres porcellanato con finitura soft nei toni del grigio nebbia.",
+      image: "https://www.refin-ceramic-tiles.com/file/1680x0/ambientazioni/_HEADER/Block-Mist-Soft-75x150.jpg"
+    },
+    {
+      id: 20,
+      name: "Sedia Palissade Cord - vista posteriore",
+      description: "Design minimale e struttura robusta per esterni moderni.",
+      image: "https://img.edilportale.com/product-thumbs/2b_Hay_PALISSADE-CORD_Go5IQXiGDY.jpeg"
+    },
+    {
+      id: 21,
+      name: "Tavolo pieghevole Traverse - struttura",
+      description: "Vista dettagliata del tavolo pieghevole Traverse, elegante e funzionale.",
+      image: "https://img.edilportale.com/product-thumbs/2b_Hay_TRAVERSE_aJuEqtOb3U.jpeg"
+    },
+    {
+      id: 22,
+      name: "Sedia Vitra Softshell - ambiente luminoso",
+      description: "Sedia ergonomica con rivestimento chiaro in spazio moderno e minimal.",
+      image: "https://static.vitra.com/media/asset/9338720/storage/v_fullbleed_1440x/87010140.jpg"
+    },
+    {
+      id: 23,
+      name: "Tavolo Vitra - uso professionale",
+      description: "Ampio tavolo da lavoro in legno e acciaio in contesto open space.",
+      image: "https://static.vitra.com/media/asset/9412465/storage/v_parallax_1920x1080/86862158.jpg"
+    },
+    {
+      id: 24,
+      name: "Tavolo Vitra - contesto domestico",
+      description: "Tavolo in legno chiaro in una zona giorno luminosa e accogliente.",
+      image: "https://static.vitra.com/media-resized/Pd5JWD38RwS1WRdulNmoLN2jHLVAyOAWeITbiJSY8ZI/fill/1440/810/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0Lzk0NzA4Mjkvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC84NzExMzcyMi5qcGc.jpg"
     }
   ];
 

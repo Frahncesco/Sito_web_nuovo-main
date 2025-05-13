@@ -11,18 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { defaultProducts } from "./ProductsData";
-
-interface Product {
-  id: string;
-  name: string;
-  description: string;
-  image: string;
-  category: string;
-  sustainabilityScore: number;
-  materials: string[];
-  recyclable: boolean;
-  lifespan: string;
-}
+import { Product } from "./ProductsData";
 
 interface ProductCatalogProps {
   products?: Product[];
