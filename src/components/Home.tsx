@@ -285,8 +285,8 @@ const Home = () => {
                 Scopri le nostre ultime innovazioni in vivibilità sostenibile, dove bellezza incontra responsabilità.
               </p>
             </div>
-            <div className="mt-2 sm:mt-0 sm:ml-4 sm:text-right sm:self-end">
-              <Button asChild variant="link" className="text-[#8BAF9C] hover:text-[#7A9A89] text-sm">
+            <div className="mt-4 sm:mt-0 sm:ml-4 sm:text-right sm:self-end w-full sm:w-auto">
+              <Button asChild variant="link" className="text-[#8BAF9C] hover:text-[#7A9A89] text-sm p-0">
                 <Link to="/products">Vedi tutti i prodotti <ArrowRight className="ml-1 h-4 w-4" /></Link>
               </Button>
             </div>
@@ -315,13 +315,6 @@ const Home = () => {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Newsletter Subscription */}
-      <section className="py-20 bg-[#F9F9F9]">
-        <div className="max-w-7xl mx-auto px-6">
-          <NewsletterSubscription />
         </div>
       </section>
     </div>

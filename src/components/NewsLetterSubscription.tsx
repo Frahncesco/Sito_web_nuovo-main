@@ -106,12 +106,12 @@ const NewsletterSubscription = () => {
       {!isVisible && (
         <button
           onClick={() => setIsVisible(true)}
-          className="fixed bottom-10 right-10 bg-[#8BAF9C] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#7AA58B] transition-colors z-50 flex items-center gap-2"
+          className="fixed bottom-10 right-3 bg-[#8BAF9C] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#7AA58B] transition-colors z-50 flex items-center gap-2"
         >
-          <Mail className="h-5 w-5" /> {/* Icona della lettera */}
+          <Mail className="h-5 w-5" />
           Newsletter
         </button>
-      )}
+        )}
     </>
   );
 };
