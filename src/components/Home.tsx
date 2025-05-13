@@ -1,11 +1,9 @@
-// Home.jsx
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Leaf, RefreshCw, Globe } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { useNavigate, Link } from "react-router-dom";
-import NewsletterSubscription from "./NewsLetterSubscription";
 
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);

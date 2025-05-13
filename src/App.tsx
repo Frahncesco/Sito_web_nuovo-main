@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { AuthProvider } from "./components/AuthContext"; 
 import NewsletterSubscription from "./components/NewsLetterSubscription";
+import CookieBanner from "./components/CoockieBanner";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
 
 
           <Footer />
+          <CookieBanner />
         </>
       </Suspense>
     </AuthProvider>
