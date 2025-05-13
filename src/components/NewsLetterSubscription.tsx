@@ -36,7 +36,7 @@ const NewsletterSubscription = () => {
 
       {/* Card della newsletter */}
       {isVisible && (
-        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg rounded-lg p-6 w-96 z-50">
+        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg rounded-lg p-4 sm:p-6 w-[90%] sm:w-[80%] md:w-[60%] lg:w-[40%] max-w-md z-50">
           <button
             onClick={() => setIsVisible(false)}
             className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"

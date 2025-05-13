@@ -37,7 +37,7 @@ const LoginPage = () => {
     <div>
       <div className="min-h-screen bg-[#FCFBF8]">
         <div className="min-h-screen flex items-center justify-center bg-[#8BAF9C]/20">
-          <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
+       <div className="bg-white shadow-lg rounded-xl px-4 py-6 w-[90%] sm:w-[80%] md:w-[60%] lg:w-[40%] xl:w-[32%] max-w-lg">
             <h1 className="text-2xl font-semibold text-[#8BAF9C] mb-6 text-center">
               Login Community
             </h1>
