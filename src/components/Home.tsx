@@ -178,46 +178,71 @@ const Home = () => {
     <div className="min-h-screen bg-[#FCFBF8] text-sm sm:text-base">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#8BAF9C]/20 to-transparent"></div>
-          <motion.div
-            initial={{ scale: 1.1, opacity: 0.8 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 20, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
-            className="w-full h-full"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=1200&q=80"
-              alt="Sfondo design sostenibile"
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
-        </div>
+  {/* Overlay con sfumatura */}
+  <div className="absolute inset-0 bg-gradient-to-r from-[#1c2841]/75 to-transparent z-10"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-40 relative z-10">
-          <motion.div initial="hidden" animate="visible" variants={staggerContainerVariants} className="max-w-2xl">
-            <motion.h1 variants={fadeInUpVariants} className="text-3xl sm:text-5xl font-light mb-6 text-[#FAF3E0]">
-              Design che <span className="font-semibold">rigenera</span> il nostro mondo
-            </motion.h1>
-            <motion.p variants={fadeInUpVariants} className="text-base sm:text-lg text-[#F5F5DC] mb-8">
-              Dalla nostra trasformazione etica nel 2025, abbiamo pionierizzato soluzioni di design sostenibile che restituiscono più di quanto prendono.
-            </motion.p>
-          </motion.div>
+  {/* Immagine di sfondo */}
+  <motion.div
+    initial={{ scale: 1.1, opacity: 0.8 }}
+    animate={{ scale: 1, opacity: 1 }}
+    transition={{
+      duration: 20,
+      repeat: Infinity,
+      repeatType: "reverse",
+      ease: "easeInOut",
+    }}
+    className="absolute inset-0 w-full h-full z-0"
+  >
+    <img
+      src="https://taktcph.com/wp-content/uploads/2023/08/galleryspokesofa230831-0001-2023-08-22-takt157132.jpg.webp"
+      alt="Sfondo design sostenibile"
+      className="w-full h-full object-cover"
+    />
+  </motion.div>
 
-          <motion.div variants={fadeInUpVariants} className="flex flex-col sm:flex-row gap-4">
-            <Button className="bg-[#8BAF9C] hover:bg-[#7A9A89] text-white px-6 py-3 text-center text-sm sm:text-base">
-              <Link to="/products" className="flex items-center justify-center">
-                Esplora i nostri prodotti <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-            <Button variant="outline" className="border-[#D9C5B2] text-[#555555] hover:bg-[#D9C5B2]/10 px-6 py-3 text-sm sm:text-base">
-              <Link to="/our-story" className="flex items-center justify-center">
-                La nostra storia
-              </Link>
-            </Button>
-          </motion.div> 
-        </div>
-      </section>
+  {/* Contenuto del testo */}
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-40 z-20">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={staggerContainerVariants}
+      className="max-w-2xl"
+    >
+      <motion.h1
+        variants={fadeInUpVariants}
+        className="text-3xl sm:text-5xl font-light mb-6 text-[#FAF3E0]"
+      >
+        Design che <span className="font-semibold">rigenera</span> il nostro
+        mondo
+      </motion.h1>
+      <motion.p
+        variants={fadeInUpVariants}
+        className="text-base sm:text-lg text-[#F5F5DC] mb-8"
+      >
+        Dalla nostra trasformazione etica nel 2025, abbiamo pionierizzato
+        soluzioni di design sostenibile che restituiscono più di quanto
+        prendono.
+      </motion.p>
+    </motion.div>
+  
+
+    <motion.div variants={fadeInUpVariants} className="flex flex-col sm:flex-row gap-4">
+      <Button className="bg-[#8BAF9C] hover:bg-[#7A9A89] text-white px-6 py-3 text-center text-sm sm:text-base">
+        <Link to="/products" className="flex items-center justify-center">
+          Esplora i nostri prodotti <ArrowRight className="ml-2 h-4 w-4" />
+        </Link>
+      </Button>
+      <Button
+        variant="outline"
+        className="border-[#D9C5B2] text-[#555555] hover:bg-[#D9C5B2]/10 px-6 py-3 text-sm sm:text-base"
+      >
+        <Link to="/our-story" className="flex items-center justify-center">
+          La nostra storia
+        </Link>
+      </Button>
+    </motion.div>
+  </div>
+</section>
 
       {/* Mission Statement */}
       <section className="bg-[#F5F3F0] py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
