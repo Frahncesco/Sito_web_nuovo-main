@@ -31,24 +31,26 @@ const CookieBanner: React.FC = () => {
 
         {/* Pulsanti responsivi */}
         <div className="flex flex-col gap-2 sm:w-auto w-full">
-          <button
-            onClick={() => handleConsent('all')}
-            className="bg-[#7A9A89] hover:bg-[#6c897a] text-white px-5 py-2 rounded text-sm text-left w-full sm:w-auto"
-          >
-            Accetto tutti i cookie
-          </button>
-          <button
-            onClick={() => handleConsent('essential')}
-            className="bg-[#7A9A89] hover:bg-[#6c897a] text-white px-5 py-2 rounded text-sm text-left w-full sm:w-auto"
-          >
-            Accetto solo i cookie essenziali
-          </button>
-          <button
-            onClick={() => handleConsent('none')}
-            className="bg-[#7A9A89] hover:bg-[#6c897a] text-white px-5 py-2 rounded text-sm text-left w-full sm:w-auto"
-          >
-            Rifiuto tutti i cookie
-          </button>
+        <div className="flex flex-col gap-2">
+  <button
+    onClick={() => handleConsent('all')}
+    className="bg-[#7A9A89] hover:bg-[#6c897a] text-white px-5 py-2 rounded text-sm text-left self-start"
+  >
+    Accetto tutti i cookie
+  </button>
+  <button
+    onClick={() => handleConsent('essential')}
+    className="bg-[#7A9A89] hover:bg-[#6c897a] text-white px-5 py-2 rounded text-sm text-left self-start"
+  >
+    Accetto solo i cookie essenziali
+  </button>
+  <button
+    onClick={() => handleConsent('none')}
+    className="bg-[#7A9A89] hover:bg-[#6c897a] text-white px-5 py-2 rounded text-sm text-left self-start"
+  >
+    Rifiuto tutti i cookie
+  </button>
+</div>
         </div>
       </div>
     </div>
