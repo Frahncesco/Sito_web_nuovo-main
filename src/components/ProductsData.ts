@@ -35,6 +35,17 @@ export const defaultProducts: Product[] = [
     lifespan: "15 anni"
   },
   {
+    id: "3",
+    name: "Tavolo Vitra - composizione domestica",
+    description: "Tavolo da pranzo Vitra in un ambiente domestico accogliente e contemporaneo.",
+    image: "https://static.vitra.com/media-resized/Pd5JWD38RwS1WRdulNmoLN2jHLVAyOAWeITbiJSY8ZI/fill/1440/810/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0Lzk0NzA4Mjkvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC84NzExMzcyMi5qcGc.jpg",
+    category: "Arredo",
+    sustainabilityScore: 90,
+    materials: ["Legno", "Acciaio verniciato"],
+    recyclable: true,
+    lifespan: "25 anni",
+  },
+  {
     id: "4",
     name: "Portapiante AirPurify",
     description: "Supporto per piante intelligente che migliora la purificazione dell'aria",
@@ -892,15 +903,4 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "25 anni",
   },
-  {
-    id: "94",
-    name: "Tavolo Vitra - composizione domestica",
-    description: "Tavolo da pranzo Vitra in un ambiente domestico accogliente e contemporaneo.",
-    image: "https://static.vitra.com/media-resized/Pd5JWD38RwS1WRdulNmoLN2jHLVAyOAWeITbiJSY8ZI/fill/1440/810/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0Lzk0NzA4Mjkvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC84NzExMzcyMi5qcGc.jpg",
-    category: "Arredo",
-    sustainabilityScore: 90,
-    materials: ["Legno", "Acciaio verniciato"],
-    recyclable: true,
-    lifespan: "25 anni",
-  }
 ];
