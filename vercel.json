@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      {
+        "source": "/((?!api|_next/static|_next/image|favicon.ico|logo azienda.png|logo azienda va.png|vite.svg|.*\\..*).*)",
+        "destination": "/index.html"
+      }
+    ]
+  }
