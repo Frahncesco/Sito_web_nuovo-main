@@ -78,7 +78,7 @@ const NewsletterSubscription = () => {
                   htmlFor="receiveMagazine"
                   className="text-sm text-gray-700"
                 >
-                  Voglio ricevere la rivista a casa
+                  Voglio ricevere il poster a casa
                 </label>
               </div>
               {receiveMagazine && (

@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { AuthProvider } from "./components/AuthContext"; 
 import NewsletterSubscription from "./components/NewsLetterSubscription";
-import CookieBanner from "./components/CoockieBanner";
+import CookieBanner from "./components/CookieBanner";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
 
 
           {/* Newsletter Subscription aggiunta qui e tolta dalla fine di Home.tsx*/}
-            <section className="py-20 bg-[#F9F9F9]">
+            <section className=" bg-[#F9F9F9]">
               <div className="max-w-7xl mx-auto px-6">
                 <NewsletterSubscription />
               </div>
