@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import { AuthProvider } from "./components/AuthContext"; 
 import NewsletterSubscription from "./components/NewsLetterSubscription";
 import CookieBanner from "./components/CookieBanner";
+import SlidoPage from "./components/SlidoPage"; 
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/our-story" element={<OurStory />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/slido" element={<SlidoPage />} />
           </Routes>
           {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
 
@@ -34,10 +36,10 @@ function App() {
               </div>
             </section>
 
-
-
           <Footer />
           <CookieBanner />
+
+          
         </>
       </Suspense>
     </AuthProvider>
