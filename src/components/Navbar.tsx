@@ -53,7 +53,7 @@ const Navbar = () => {
             <Link to="/products" className="hover:text-[#8BAF9C] transition-colors">Prodotti</Link>
             <Link to="/our-story" className="hover:text-[#8BAF9C] transition-colors">La nostra storia</Link>
             <a href="#footer" className="hover:text-[#8BAF9C] transition-colors">Contatti</a> {/* Anchors stay */}
-            <Link to="/slido" className="hover:text-[#8BAF9C] transition-colors">Keywords</Link>
+            <Link to="/slido" className="hover:text-[#8BAF9C] transition-colors">Values</Link>
           </div>
 
           {/* Desktop auth or user menu */}
@@ -113,7 +113,7 @@ const Navbar = () => {
               <Link to="/products" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Prodotti</Link>
               <Link to="/our-story" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">La nostra storia</Link>
               <a href="#footer" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Contatti</a>
-              <Link to="/slido" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Keywords</Link>
+              <Link to="/slido" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#8BAF9C]">Values</Link>
 
 
               {isAuthenticated ? (

@@ -287,10 +287,10 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "30 anni",
   },
-  {
+  { //cambiato
     id: "38",
-    name: "Tavolo da esterno AH701",
-    description: "Tavolo basso da esterno in teak, perfetto per accompagnare sedute lounge e relax estivo.",
+    name: "Panche esterne",
+    description: "Panche esterne in teak, perfetto per accompagnare sedute lounge e relax estivo.",
     image: "https://res.cloudinary.com/dfwzl0ito/image/fetch/c_scale,w_640,f_auto/https%3A%2F%2Fadmincms.carlhansen.com%2Fglobalassets%2Fproducts%2Foutdoor-furniture%2Fah701%2Fah701_teak_untreated_detail.jpg",
     category: "Arredo",
     sustainabilityScore: 89,
@@ -364,23 +364,23 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "25 anni",
   },
-  {
+  { //cambiato 
     id: "45",
-    name: "Sedie Ray Family",
-    description: "Sedute moderne realizzate con plastica riciclata, dal design ergonomico e minimale.",
+    name: "Lampade da Design",
+    description: "Lampada realizzata con plastica riciclata, dal design ergonomico e minimale.",
     image: "https://materdesign.com/cdn/shop/products/Ray_Family_new_6fe530a8-aaec-45f9-8c86-9b17c8f66c0f_1024x1024.png?v=1565612719",
-    category: "Arredo",
+    category: "Illuminazione",
     sustainabilityScore: 94,
     materials: ["Plastica riciclata", "Acciaio"],
     recyclable: true,
     lifespan: "20 anni",
   },
-  {
+  { //cambiato 
     id: "46",
-    name: "Tavolino basso da esterno Ocean",
-    description: "Tavolino in plastica riciclata e acciaio, pensato per ambienti outdoor sostenibili e moderni.",
+    name: "Lampade da esterno",
+    description: "Lampada pensata per ambienti outdoor sostenibili e moderni.",
     image: "https://materdesign.com/cdn/shop/files/MATER__3_acfaba63-c3d0-4b4e-88f4-19d15372fa08_1024x1024.jpg?v=1738320091",
-    category: "Arredo",
+    category: "Illuminazione",
     sustainabilityScore: 95,
     materials: ["Plastica oceanica riciclata", "Acciaio"],
     recyclable: true,
@@ -420,17 +420,6 @@ export const defaultProducts: Product[] = [
     lifespan: "20 anni",
   },
   {
-    id: "50",
-    name: "Poltrona lounge in pelle",
-    description: "Elegante poltrona con rivestimento in pelle ecologica e struttura in legno naturale.",
-    image: "https://taktcph.com/wp-content/uploads/2023/08/2023-08-22-takt157201softloungechairleathersplit-960x1080.jpg.webp",
-    category: "Arredo",
-    sustainabilityScore: 88,
-    materials: ["Legno certificato", "Pelle a basso impatto"],
-    recyclable: true,
-    lifespan: "20 anni",
-  },
-  {
     id: "51",
     name: "Tavolino laterale Sling - ambientazione",
     description: "Tavolino laterale leggero e compatto, con design ideale per spazi contenuti.",
@@ -463,10 +452,10 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "15 anni",
   },
-  {
+  {//cambiato
     id: "54",
-    name: "Sedia imbottita Soft - ambientazione",
-    description: "Sedia moderna imbottita, perfetta per la zona giorno o l’ambiente di lavoro.",
+    name: "Cucina - ambientazione",
+    description: "Cucina moderna, perfetta per la zona giorno o l’ambiente di lavoro.",
     image: "https://taktcph.com/wp-content/uploads/2022/09/splitmodule-0003-2022-06-01-takt-y2126341.jpg.webp",
     category: "Arredo",
     sustainabilityScore: 90,
@@ -474,10 +463,10 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "20 anni",
   },
-  {
+  {//cambiato
     id: "55",
-    name: "Sedia Soft - dettaglio costruttivo",
-    description: "Dettaglio tecnico della struttura modulare della sedia Soft.",
+    name: "Appendiabiti", 
+    description: "Appendiabiti modulare in legno, ideale per ingressi e spazi di lavoro.",
     image: "https://taktcph.com/wp-content/uploads/2022/09/splitmodule-0007-2022-06-01-takt-y2126488.png.webp",
     category: "Arredo",
     sustainabilityScore: 90,
@@ -584,10 +573,10 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "25 anni",
   },
-  {
+  { //cambiato
     id: "65",
-    name: "Panca imbottita Soft - ambientazione chiara",
-    description: "Panca imbottita dal profilo essenziale, ideale per ingressi o ai piedi del letto.",
+    name: "Sedia imbottita Soft - ambientazione chiara",
+    description: "Sedia imbottita dal profilo essenziale, ideale per ingressi o per la sala da pranzo.",
     image: "https://taktcph.com/wp-content/uploads/2025/02/mobile-format-960x1080.webp",
     category: "Arredo",
     sustainabilityScore: 91,
@@ -595,10 +584,10 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "20 anni",
   },
-  {
+  { //cambiato
     id: "66",
-    name: "Panca Soft - ambientazione scura",
-    description: "Versione scura della panca Soft, perfetta per ambienti contemporanei e raffinati.",
+    name: "Sedia Soft - ambientazione scura",
+    description: "Versione scura della sedia Soft, perfetta per ambienti contemporanei e raffinati.",
     image: "https://taktcph.com/wp-content/uploads/2025/02/2024-06-17-takt174994-1-scaled-e1740654474717-960x1080.jpg.webp",
     category: "Arredo",
     sustainabilityScore: 91,
@@ -606,10 +595,10 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "20 anni",
   },
-  {
+  { //cambiato
     id: "67",
-    name: "Panca Soft - vista dinamica",
-    description: "Vista dinamica della panca Soft, con animazione che ne evidenzia la forma compatta e robusta.",
+    name: "Scrivania Soft - vista dinamica",
+    description: "Vista dinamica della scrivania Soft, con animazione che ne evidenzia la forma compatta e robusta.",
     image: "https://taktcph.com/wp-content/uploads/2025/02/ezgif.com-webp-maker-960x1080.webp",
     category: "Arredo",
     sustainabilityScore: 91,
@@ -727,14 +716,14 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "30 anni",
   },
-  {
+  { //cambiato
     id: "78",
-    name: "Piastrella artistica - Affrescati Lapis",
-    description: "Piastrella decorativa ispirata agli affreschi, con tonalità profonde e materiche.",
+    name: "Piastrella effetto cemeento - Affrescati Lapis",
+    description: "Piastrella in cemento, con tonalità profonde e materiche.",
     image: "https://www.refin-ceramic-tiles.com/wp-content/uploads/2024/02/Affrescati_Lapis_120x120_still_life_01.jpg",
     category: "Materiali e superfici",
     sustainabilityScore: 90,
-    materials: ["Gres porcellanato smaltato"],
+    materials: ["Gres porcellanato smaltato", "cemento"],
     recyclable: true,
     lifespan: "30 anni",
   },
@@ -782,10 +771,10 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "30 anni",
   },
-  {
+  { //cambiato
     id: "83",
-    name: "Sedia Palissade Cord",
-    description: "Sedia outdoor intrecciata con corde resistenti, perfetta per ambienti esterni eleganti.",
+    name: "Panca Palissade Cord",
+    description: "Panca outdoor intrecciata con corde resistenti, perfetta per ambienti esterni eleganti.",
     image: "https://img.edilportale.com/product-thumbs/2b_Hay_PALISSADE-CORD_pNg3kfVR66.jpeg",
     category: "Arredo",
     sustainabilityScore: 87,
@@ -793,10 +782,10 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "15 anni",
   },
-  {
+  { //cambiato
     id: "84",
-    name: "Sedia Palissade Cord - vista laterale",
-    description: "Vista laterale della sedia Palissade con intreccio in corda, per uso esterno.",
+    name: "Panca Palissade Cord - vista laterale",
+    description: "Vista laterale della Panca Palissade con intreccio in corda, per uso esterno.",
     image: "https://img.edilportale.com/product-thumbs/2b_Hay_PALISSADE-CORD_jBJpNAhaL.jpeg",
     category: "Arredo",
     sustainabilityScore: 87,
@@ -815,10 +804,10 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "15 anni",
   },
-  {
+  {//cambiato
     id: "86",
-    name: "Tavolo pieghevole Traverse - vista frontale",
-    description: "Tavolo da esterno pieghevole Traverse, compatto ed elegante.",
+    name: "Sedia pieghevole Traverse - vista frontale",
+    description: "Sedia da esterno pieghevole Traverse, compatta ed elegante.",
     image: "https://img.edilportale.com/product-thumbs/2b_Hay_TRAVERSE_GNzDNFOXv6.jpeg",
     category: "Arredo",
     sustainabilityScore: 85,
@@ -826,10 +815,10 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "20 anni",
   },
-  {
+  {//cambiato
     id: "87",
-    name: "Tavolo Traverse - vista ambientata",
-    description: "Tavolo pieghevole Traverse in ambientazione esterna, ideale per terrazze e giardini.",
+    name: "Sedia Traverse - vista ambientata",
+    description: "Sedia pieghevole Traverse in ambientazione esterna, ideale per terrazze e giardini.",
     image: "https://img.edilportale.com/product-thumbs/2b_Hay_TRAVERSE_3ZgDWw9bhA.jpeg",
     category: "Arredo",
     sustainabilityScore: 85,
@@ -837,10 +826,10 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "20 anni",
   },
-  {
+  {//cambiato
     id: "88",
-    name: "Tavolo Traverse - dettaglio struttura",
-    description: "Vista dettagliata del meccanismo pieghevole del tavolo Traverse.",
+    name: "Sedia Traverse - dettaglio struttura",
+    description: "Vista dettagliata del meccanismo pieghevole della sedia Traverse.",
     image: "https://img.edilportale.com/product-thumbs/2b_Hay_TRAVERSE_aJuEqtOb3U.jpeg",
     category: "Arredo",
     sustainabilityScore: 85,

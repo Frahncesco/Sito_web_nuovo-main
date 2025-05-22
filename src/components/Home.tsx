@@ -74,22 +74,22 @@ const Home = () => {
       description: "Sedia in legno naturale in un contesto abitativo contemporaneo con luce calda.",
       image: "https://taktcph.com/wp-content/uploads/2022/11/lifestylecrosschair221114.jpg.webp"
     },
-    {
+    {//cambiato
       id: 9,
-      name: "Divano modulare Takt - composizione angolare",
-      description: "Divano componibile modulare in tessuto grigio, dallo stile nordico e sostenibile.",
+      name: "Cucina modulare Takt - composizione angolare",
+      description: "Cucina componibile modulare in stile nordico, con finiture in legno e design sostenibile.",
       image: "https://taktcph.com/wp-content/uploads/2022/09/splitmodule-0003-2022-06-01-takt-y2126341.jpg.webp"
     },
-    {
+    { //cambiato 
       id: 10,
-      name: "Divano modulare Takt - composizione con chaise longue",
-      description: "Versione allungata del divano modulare Takt, ideale per spazi rilassanti.",
+      name: "Appendiabiti modulare Takt - versione con chaise longue",
+      description: "Appendiabiti modulare con design minimalista, ideale per spazi moderni e funzionali.",
       image: "https://taktcph.com/wp-content/uploads/2022/09/splitmodule-0007-2022-06-01-takt-y2126488.png.webp"
     },
-    {
+    {//cambiato 
       id: 11,
-      name: "Sedia Crossbar con divano modulare",
-      description: "Combinazione tra sedia in legno e divano, per un salotto elegante e funzionale.",
+      name: "Sedia Paliss",
+      description: "Sedia in legno dal design minimalista, ideale per ambienti moderni e funzionali.",
       image: "https://taktcph.com/wp-content/uploads/2022/01/splitmodule-0014-2021-11-10-takt-veranda1860-1crossbarchair.jpg"
     },
     {
@@ -140,16 +140,16 @@ const Home = () => {
       description: "Gres porcellanato con finitura soft nei toni del grigio nebbia.",
       image: "https://www.refin-ceramic-tiles.com/file/1680x0/ambientazioni/_HEADER/Block-Mist-Soft-75x150.jpg"
     },
-    {
+    {//cambiato
       id: 20,
-      name: "Sedia Palissade Cord - vista posteriore",
-      description: "Design minimale e struttura robusta per esterni moderni.",
+      name: "Panca Palissade Cord - vista posteriore",
+      description: "Design minimale e struttura robusta, ideale per esterni moderni.",
       image: "https://img.edilportale.com/product-thumbs/2b_Hay_PALISSADE-CORD_Go5IQXiGDY.jpeg"
     },
-    {
+    {//cambiato
       id: 21,
-      name: "Tavolo pieghevole Traverse - struttura",
-      description: "Vista dettagliata del tavolo pieghevole Traverse, elegante e funzionale.",
+      name: "Sedia Traverse - struttura",
+      description: "Vista dettagliata della sedia elegante e funzionale.",
       image: "https://img.edilportale.com/product-thumbs/2b_Hay_TRAVERSE_aJuEqtOb3U.jpeg"
     },
     {
