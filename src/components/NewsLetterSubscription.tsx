@@ -43,10 +43,6 @@ const NewsletterSubscription = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white p-8 rounded-2xl shadow-xl border border-gray-200">
-      <h2 className="text-3xl font-bold text-[#2E3A59] mb-3 text-center">
-        📨 Iscriviti alla Newsletter
-      </h2>
       <>
         {isVisible && (
           <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"></div>
@@ -101,7 +97,6 @@ const NewsletterSubscription = () => {
           </button>
         )}
       </>
-    </div>
   );
 };
 
