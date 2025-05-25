@@ -20,30 +20,18 @@ function OurStory() {
               </h2>
 
               <div className="flex-1 overflow-y-auto pr-4 space-y-6 text-[#555555]">
-                <p>
-                Nel 2025, abbiamo intrapreso un viaggio profondo e senza compromessi - un percorso che ha ridefinito non solo la missione della nostra azienda, ma anche la natura stessa del nostro rapporto con il pianeta. Ciò che iniziò come un cambiamento strategico si trasformò presto in una trasformazione olistica, guidata da una visione audace e dalla ferma convinzione che il design debba servire sia le persone che il pianeta. Con il supporto di un team appassionato e multidisciplinare di innovatori, abbiamo smantellato le convenzioni delle pratiche di design tradizionali e gettato le basi per qualcosa di radicalmente diverso: un'impresa rigenerativa dedicata alla guarigione del pianeta e al cambiamento sistemico.
-                </p>
+              <p> Fondata a Torino nel 2028, <strong>Atelier 35</strong> è un’azienda di design industriale che unisce una forte identità estetica a un approccio produttivo efficiente e orientato alla qualità. Specializzata nella realizzazione di oggetti d’arredo e complementi per la casa, l’azienda si distingue per uno stile formale definito, pensato per integrarsi nei contesti abitativi contemporanei e rispondere alle esigenze del mercato globale. </p>
 
-                <p>
-                La nostra trasformazione non è stata graduale, ma fondamentale. Abbiamo abbracciato completamente i principi del design circolare e rigenerativo, andando oltre la sostenibilità come obiettivo e adottandola come base. Nel nostro nuovo paradigma, i prodotti sono concepiti come elementi viventi all'interno di un più ampio sistema ecologico e sociale - progettati non solo per durare, ma per evolversi continuamente, rigenerarsi e contribuire positivamente alla biosfera. Vediamo ogni prodotto come un potenziale agente di rigenerazione: uno strumento per ricostruire il suolo, purificare l'aria, sequestrare carbonio e nutrire la biodiversità. Il design, per noi, non è più un processo di creazione di oggetti - è una responsabilità, un dialogo e una promessa alle generazioni future.
-                </p>
+              <p> Nel 2035, un’evoluzione strategica ha trasformato Atelier 35 in un’impresa orientata al design rigenerativo, ridefinendo il ruolo del progetto come leva per il cambiamento ambientale e sociale. Da una logica di ottimizzazione si è passati a una visione sistemica, in cui ogni prodotto è concepito come parte di un ecosistema più ampio. </p>
 
-                <p>
-                In ogni fase della creazione - dall'approvvigionamento dei materiali alla produzione, dal ciclo di vita del prodotto alla sua reintegrazione nell'ecosistema - ci poniamo una domanda fondamentale: Questo dà più di quanto prenda? La nostra etica del design è radicata nella convinzione che estetica ed etica non siano in contrasto, ma intrinsecamente connesse. La bellezza non è solo come un prodotto appare, ma come si comporta nel mondo che abita - come nutre, ripristina ed eleva.
-                </p>
+              <p> L’adozione dei principi del design circolare ha guidato l’intera filiera: materiali durevoli e riciclabili, processi ottimizzati per la serialità senza sprechi, tecnologie in grado di ridurre l’impatto ambientale e aumentare la tracciabilità. </p>
 
-                <p>
-                Ora, dieci anni dopo quel cambiamento catalizzatore, ci ergiamo come orgogliosi pionieri del movimento del design rigenerativo. I nostri prodotti e progetti sono testimonianze viventi di ciò che è possibile quando l'innovazione è guidata dall'integrità e dall'interdipendenza. Dai mobili biodegradabili realizzati con micelio ai sistemi di illuminazione autosufficienti alimentati da organismi bioluminescenti, ogni creazione nasce da un impegno verso la circolarità, la resilienza e l'intelligenza ecologica.
-                </p>
+              <p> In questo modello, la bellezza non si limita all’aspetto formale, ma si misura anche attraverso la capacità di un oggetto di durare nel tempo, generare valore e ridurre il proprio impatto. Ogni fase – dalla progettazione alla produzione, dalla distribuzione al fine vita – è pensata per contribuire in modo positivo al sistema in cui il prodotto è inserito. </p>
 
-                <p>
-                Ma la nostra storia non riguarda solo l'innovazione - riguarda la cura. Riguarda il riconoscimento dell'urgente necessità di un cambiamento sistemico e la scelta di guidare con l'esempio. Riguarda il progettare con empatia - per le comunità, per gli ecosistemi e per i futuri invisibili che stiamo plasmando con ogni decisione. Non ci accontentiamo più di minimizzare i danni; siamo qui per creare un impatto netto positivo, per riparare ciò che è stato danneggiato e per immaginare - e costruire - un futuro in cui tutta la vita possa prosperare.
-                </p>
+              <p> Oggi, Atelier 35 è riconosciuta a livello internazionale per l’equilibrio tra chiarezza formale e responsabilità ambientale. Le collezioni, prodotte interamente in Italia in collaborazione con studi di design affini alla visione aziendale, rappresentano un design solido, replicabile e capace di sostenere nuove forme di abitare. </p>
 
-                <p>
-                Guardando avanti, la nostra missione rimane chiara e incrollabile: spingere i confini di ciò che il design può ottenere, favorire culture rigenerative e co-creare un mondo in cui il design non sia solo bello e funzionale, ma anche profondamente giusto, vitale e curativo.
-                </p>
-            </div>
+              <p> La missione dell’azienda resta salda: innovare con integrità, promuovere culture rigenerative e contribuire a un futuro in cui industria, natura e società possano coesistere in equilibrio. </p>
+              </div>
             </motion.div>
 
             {/* Immagine */}
