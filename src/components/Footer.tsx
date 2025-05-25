@@ -60,7 +60,6 @@ const Footer = () => {
             <div className="text-center md:text-left text-xs md:text-sm space-y-1">
               <h2 className="text-sm md:text-base font-semibold mb-1">Contattaci</h2>
               <p>Email: atelier35official@gmail.com</p>
-              <p>Telefono: +39 123 456 7890</p>
               <p>Indirizzo Sede: Via Gioberti, 64</p>
               <p>Indirizzo filiale: Via Cigna, 152</p>
               <p>Orari: Lun-Ven 9:00-18:00</p>
