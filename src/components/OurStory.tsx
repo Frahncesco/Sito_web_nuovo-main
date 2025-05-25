@@ -20,19 +20,14 @@ function OurStory() {
               </h2>
 
               <div className="flex-1 overflow-y-auto pr-4 space-y-6 text-[#555555]">
-              <p> Fondata a Torino nel 2028, <strong>Atelier 35</strong> è un’azienda di design industriale che unisce una forte identità estetica a un approccio produttivo efficiente e orientato alla qualità. Specializzata nella realizzazione di oggetti d’arredo e complementi per la casa, l’azienda si distingue per uno stile formale definito, pensato per integrarsi nei contesti abitativi contemporanei e rispondere alle esigenze del mercato globale. </p>
-
-              <p> Nel 2035, un’evoluzione strategica ha trasformato Atelier 35 in un’impresa orientata al design rigenerativo, ridefinendo il ruolo del progetto come leva per il cambiamento ambientale e sociale. Da una logica di ottimizzazione si è passati a una visione sistemica, in cui ogni prodotto è concepito come parte di un ecosistema più ampio. </p>
-
-              <p> L’adozione dei principi del design circolare ha guidato l’intera filiera: materiali durevoli e riciclabili, processi ottimizzati per la serialità senza sprechi, tecnologie in grado di ridurre l’impatto ambientale e aumentare la tracciabilità. </p>
-
-              <p> In questo modello, la bellezza non si limita all’aspetto formale, ma si misura anche attraverso la capacità di un oggetto di durare nel tempo, generare valore e ridurre il proprio impatto. Ogni fase – dalla progettazione alla produzione, dalla distribuzione al fine vita – è pensata per contribuire in modo positivo al sistema in cui il prodotto è inserito. </p>
-
-              <p> Oggi, Atelier 35 è riconosciuta a livello internazionale per l’equilibrio tra chiarezza formale e responsabilità ambientale. Le collezioni, prodotte interamente in Italia in collaborazione con studi di design affini alla visione aziendale, rappresentano un design solido, replicabile e capace di sostenere nuove forme di abitare. </p>
-
-              <p> La missione dell’azienda resta salda: innovare con integrità, promuovere culture rigenerative e contribuire a un futuro in cui industria, natura e società possano coesistere in equilibrio. </p>
+              <p> Fondata a Torino nel 2028, <strong>Atelier 35</strong> è un’azienda di design industriale specializzata nella creazione di oggetti d’arredo e complementi per la casa, riconoscibili per uno stile formale definito e coerente. Ogni progetto nasce da una visione estetica chiara e da un impegno verso la qualità e la responsabilità. </p> 
+              <p> Nel 2035, l’azienda ha intrapreso un percorso di trasformazione che ha ridefinito il proprio ruolo: non più solo produttrice di oggetti, ma promotrice di un design rigenerativo, inclusivo e consapevole. Questa evoluzione ha portato a un modello che integra sostenibilità ambientale e impatto sociale positivo. </p> 
+              <p> I principi del design circolare guidano l’intero processo: dalla scelta di materiali riciclabili e durevoli alla progettazione di prodotti pensati per essere riparati, riutilizzati e reintrodotti nei cicli naturali. L’adozione di tecnologie a basso impatto e pratiche produttive trasparenti rafforza questo impegno. </p> 
+              <p> Atelier 35 promuove l’inclusione sociale coinvolgendo una rete di collaboratori e studi di design che condividono valori comuni, con l’obiettivo di generare valore non solo estetico, ma anche culturale e ambientale. </p> 
+              <p> Oggi, l’azienda è riconosciuta a livello internazionale per la capacità di coniugare chiarezza formale e responsabilità. Le sue collezioni raccontano una visione del design come strumento di relazione, cura e rigenerazione. </p> 
+              <p> Lo sguardo al futuro è guidato da una missione precisa: contribuire a un sistema abitativo più equo, sostenibile e vitale, in cui l’industria del design sia al servizio della vita, della diversità e del pianeta. </p>
               </div>
-            </motion.div>
+              </motion.div>
 
             {/* Immagine */}
             <motion.div
