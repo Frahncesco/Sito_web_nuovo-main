@@ -718,7 +718,7 @@ export const defaultProducts: Product[] = [
   },
   { //cambiato
     id: "78",
-    name: "Piastrella effetto cemeento - Affrescati Lapis",
+    name: "Piastrella effetto cemento - Affrescati Lapis",
     description: "Piastrella in cemento, con tonalità profonde e materiche.",
     image: "https://www.refin-ceramic-tiles.com/wp-content/uploads/2024/02/Affrescati_Lapis_120x120_still_life_01.jpg",
     category: "Materiali e superfici",
