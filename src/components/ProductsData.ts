@@ -123,6 +123,39 @@ export const defaultProducts: Product[] = [
     lifespan: "20 anni",
   },
   {
+    id: "12",
+    name: "Balder D",
+    description: "Variante Balder D, superficie tessile con aspetto grezzo e moderno.",
+    image: "https://cdn.tapetender70er.de/media/image/9c/48/9a/Balder-D_106184_2880x1440@2x.jpg",
+    category: "Materiali e superfici",
+    sustainabilityScore: 92,
+    materials: ["Fibre naturali", "Inchiostri a base d'acqua"],
+    recyclable: true,
+    lifespan: "12 anni"
+  },
+  {
+    id: "13",
+   name: "Balder A",
+    description: "Carta da parati Balder A con finitura materica e tono caldo.",
+   image: "https://cdn.tapetender70er.de/media/image/d3/45/d9/106184-A_Balder_2880x1440@2x.jpg",
+    category: "Materiali e superfici",
+   sustainabilityScore: 92,
+   materials: ["Fibre naturali", "Inchiostri a base d'acqua"],
+   recyclable: true,
+   lifespan: "12 anni"
+  },
+  {
+    id: "14",
+   name: "Norana C",
+    description: "Carta da parati Norana C, fantasia astratta con tonalità sobrie.",
+   image: "https://cdn.tapetender70er.de/media/image/88/ac/6b/Norana-C_452814_2880x1440@2x.jpg",
+    category: "Materiali e superfici",
+   sustainabilityScore: 87,
+   materials: ["Carta FSC", "Colori a basso impatto ambientale"],
+   recyclable: true,
+   lifespan: "10 anni"
+  },
+  {
     id: "21",
     name: "Poltrona CH07",
     description: "Una poltrona lussuosa progettata per comfort e stile.",
@@ -892,4 +925,129 @@ export const defaultProducts: Product[] = [
     recyclable: true,
     lifespan: "25 anni",
   },
+
+
+
+  // Aggiunta carta da parati
+    {
+      id: "94",
+     name: "Johara B",
+      description: "Carta da parati Johara B con motivo geometrico astratto e colorazioni naturali.",
+     image: "https://cdn.tapetender70er.de/media/image/aa/25/0f/Johara-B_451851_2880x1440@2x.jpg",
+      category: "Materiali e superfici",
+     sustainabilityScore: 85,
+     materials: ["Carta FSC", "Inchiostri a base d'acqua"],
+     recyclable: true,
+     lifespan: "10 anni"
+    },
+    {
+      id: "95",
+     name: "Johara A",
+      description: "Carta da parati Johara A, variante con sfondo chiaro e motivi stilizzati.",
+     image: "https://cdn.tapetender70er.de/media/image/c8/96/38/451851_Johara_2880x1440@2x.jpg",
+      category: "Materiali e superfici",
+     sustainabilityScore: 85,
+     materials: ["Carta FSC", "Inchiostri a base d'acqua"],
+     recyclable: true,
+     lifespan: "10 anni"
+    },
+    {
+      id: "96",
+     name: "Kenai A",
+      description: "Carta da parati Kenai A con disegno grafico dai toni rilassanti.",
+     image: "https://cdn.tapetender70er.de/media/image/59/92/75/Kenai-A_864211_2880x1440@2x.jpg",
+      category: "Materiali e superfici",
+     sustainabilityScore: 80,
+     materials: ["Carta riciclata", "Pigmenti naturali"],
+     recyclable: true,
+     lifespan: "8 anni"
+    },
+    {
+      id: "97",
+     name: "Kenai",
+      description: "Variante Kenai con pattern a onde fluide su tonalità calde.",
+     image: "https://cdn.tapetender70er.de/media/image/a7/26/c9/864211-A_Kenai_2880x1440@2x.jpg",
+      category: "Materiali e superfici",
+     sustainabilityScore: 80,
+     materials: ["Carta riciclata", "Pigmenti naturali"],
+     recyclable: true,
+     lifespan: "8 anni"
+    },
+    {
+      id: "98",
+     name: "Scala B",
+      description: "Carta da parati Scala B con grafica vintage a gradazioni.",
+     image: "https://cdn.tapetender70er.de/media/image/0c/9f/17/Scala-B_451821_2880x1440@2x.jpg",
+      category: "Materiali e superfici",
+     sustainabilityScore: 88,
+     materials: ["Vinile PVC-free", "Supporto non tessuto"],
+     recyclable: false,
+     lifespan: "12 anni"
+    },
+    {
+      id: "99",
+     name: "Scala A",
+      description: "Variante Scala A con motivi grafici a gradiente sfumato.",
+     image: "https://cdn.tapetender70er.de/media/image/2e/42/19/Scala-A_451821_2880x1440@2x.jpg",
+      category: "Materiali e superfici",
+     sustainabilityScore: 88,
+     materials: ["Vinile PVC-free", "Supporto non tessuto"],
+     recyclable: false,
+     lifespan: "12 anni"
+    },
+    {
+      id: "100",
+     name: "Dandelion Mobile A",
+      description: "Carta da parati con motivo di soffioni stilizzati in movimento.",
+     image: "https://cdn.tapetender70er.de/media/image/1c/68/fe/Dandelion-Mobile-A_690151_2880x1440@2x.jpg",
+      category: "Materiali e superfici",
+     sustainabilityScore: 90,
+     materials: ["Carta FSC", "Inchiostri ecologici"],
+     recyclable: true,
+     lifespan: "10 anni"
+    },
+    {
+      id: "101",
+     name: "Dandelion Mobile",
+      description: "Variante chiara di Dandelion Mobile, con design floreale delicato.",
+     image: "https://cdn.tapetender70er.de/media/image/91/00/6a/690151-A_Dandelion-Mobile_2880x1440@2x.jpg",
+      category: "Materiali e superfici",
+     sustainabilityScore: 90,
+     materials: ["Carta FSC", "Inchiostri ecologici"],
+     recyclable: true,
+     lifespan: "10 anni"
+    },
+    {
+      id: "102",
+     name: "Zag-zig",
+      description: "Carta da parati Zag-zig con pattern a zigzag retrò e colorato.",
+     image: "https://cdn.tapetender70er.de/media/image/2b/3d/41/462131_Zag-zig_2880x1440@2x.jpg",
+      category: "Materiali e superfici",
+     sustainabilityScore: 75,
+     materials: ["Carta patinata", "Colori resistenti alla luce"],
+     recyclable: true,
+     lifespan: "8 anni"
+    },
+    {
+      id: "103",
+     name: "Zag-zig A",
+      description: "Variante Zag-zig A con colori pastello e motivi dinamici.",
+     image: "https://cdn.tapetender70er.de/media/image/00/03/13/Zag-zig-A_462131_2880x1440@2x.jpg",
+      category: "Materiali e superfici",
+     sustainabilityScore: 75,
+     materials: ["Carta patinata", "Colori resistenti alla luce"],
+     recyclable: true,
+     lifespan: "8 anni"
+    },
+    {
+      id: "104",
+     name: "Balder F",
+      description: "Carta da parati Balder F con texture naturale e colori tenui.",
+     image: "https://cdn.tapetender70er.de/media/image/ab/fc/10/Balder-F_106184_2880x1440@2x.jpg",
+      category: "Materiali e superfici",
+     sustainabilityScore: 92,
+     materials: ["Fibre naturali", "Inchiostri a base d'acqua"],
+     recyclable: true,
+     lifespan: "12 anni"
+    },
 ];
