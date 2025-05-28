@@ -1050,4 +1050,90 @@ export const defaultProducts: Product[] = [
      recyclable: true,
      lifespan: "12 anni"
     },
+
+
+    
+  {
+    id: "105",
+   name: "Libreria Aliant",
+    description: "Libreria modulare bifacciale in legno massello, perfetta come separatore elegante tra ambienti.",
+   image: "https://www.diotti.com/it/media/images/librerie/360097/afg-libreria-aliant-04-00.jpeg",
+   category: "Arredo",
+   sustainabilityScore: 88,
+    materials: ["Legno massello", "Metallo verniciato"],
+   recyclable: true,
+    lifespan: "20 anni",
+  },
+  {
+    id: "106",
+   name: "Libreria Betis",
+    description: "Sistema libreria componibile che crea divisioni funzionali mantenendo apertura visiva.",
+   image: "https://www.diotti.com/it/media/images/librerie/483126/libreria-betis-90.jpeg",
+   category: "Arredo",
+   sustainabilityScore: 85,
+    materials: ["Legno laminato", "Struttura metallica"],
+   recyclable: true,
+    lifespan: "18 anni",
+  },
+  {
+    id: "107",
+   name: "Libreria Airport",
+    description: "Libreria dal design contemporaneo che definisce spazi senza chiuderli completamente.",
+   image: "https://www.diotti.com/it/media/images/librerie/337185/libreria-airport-001-1.jpeg",
+   category: "Arredo",
+   sustainabilityScore: 82,
+    materials: ["MDF eco-friendly", "Acciaio"],
+   recyclable: true,
+    lifespan: "15 anni",
+  },
+
+
+  {
+    id: "108",
+   name: "Sedia Diffrient Smart",
+    description: "Sedia ergonomica con meccanismo auto-regolante, progettata per il comfort in autonomia lavorativa.",
+   image: "https://it.humanscale.com/userFiles/images/seating/smart/hs-seating-diffrient-smart-studio-Frechette_Silos_181_RT.jpg",
+   category: "Arredo",
+   sustainabilityScore: 90,
+    materials: ["Polimero riciclabile", "Alluminio", "Tessuto tecnico"],
+   recyclable: true,
+    lifespan: "15 anni",
+  },
+
+
+  {
+    id: "109",
+   name: "Sedia Ocean",
+    description: "Sedia operativa realizzata con plastica riciclata marina, per postazioni di lavoro sostenibili.",
+   image: "https://www.leyform.com/ita/sedia-ufficio-operativa/gallery/sedia-in-plastica-per-ufficio-e-laboratorio-ocean-img-08.jpg",
+   category: "Arredo",
+   sustainabilityScore: 95,
+    materials: ["Plastica oceanica riciclata", "Acciaio riciclato"],
+   recyclable: true,
+    lifespan: "12 anni",
+  },
+
+
+  {
+    id: "110",
+   name: "Sedia VELA Tango",
+    description: "Sedia ergonomica per persone con disabilità, favorisce autonomia e comfort personalizzato.",
+   image: "https://www.bodytech.it/wp-content/uploads/2025/03/feature_VELA-Tango-700E-active-medium-1-llimage-s405x9999-q80-fwebp.webp",
+   category: "Arredo",
+   sustainabilityScore: 85,
+    materials: ["Polimero biocompatibile", "Acciaio inox", "Tessuto antibatterico"],
+   recyclable: true,
+    lifespan: "20 anni",
+  },
+  {
+    id: "111",
+   name: "Sedia adattiva Bodytech",
+    description: "Seduta specializzata per garantire comfort e autonomia a persone con diverse abilità motorie.",
+   image: "https://www.bodytech.it/wp-content/uploads/2023/12/Progetto-senza-titolo-4.jpg",
+   category: "Arredo",
+   sustainabilityScore: 82,
+    materials: ["Schiuma memory", "Struttura regolabile", "Rivestimento tecnico"],
+   recyclable: true,
+    lifespan: "18 anni",
+  }
 ];
