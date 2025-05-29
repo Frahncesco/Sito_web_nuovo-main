@@ -2,7 +2,7 @@ const SlidoPage = () => (
     <section className="w-full bg-white py-10">
       <div className="max-w-7xl mx-auto px-6">
         <iframe 
-          src="https://wall.sli.do/event/9x7VLJz6XRfo9BJPZvYtgM?section=e20aa6e9-0235-4502-9558-76b1c7bd2420"
+          src="https://wall.sli.do/event/iu5QsBVG3hnheSFXJdte68?section=d3718caa-1724-4d91-8d15-cdecb0a243f0"
           width="100%"
           height="560"
           style={{ border: "none" }}
